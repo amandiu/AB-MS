@@ -1,16 +1,15 @@
 
-import { StyleSheet, Text, View, Image, TextInput, Dimensions, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, TextInput, Dimensions, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Press_Button from '../Components/Press_Button'
-import Logo from '../assets/Logo.png'
-
+import { Button } from 'react-native-web'
 
 
 export default function Login({ navigation, onPress }) {
   return (
     <View style={styles.Icontainer}>
       <View style={styles.Lprofile}>
-        <Image source={Logo} style={styles.StayImage}></Image>
+
       </View>
       <View style={styles.LBody}>
         <TextInput style={styles.TextStyle} placeholder='Email'></TextInput>
@@ -33,9 +32,10 @@ const { width } = Dimensions.get("screen")
 
 const styles = StyleSheet.create({
   Icontainer: {
+    backgroundColor:'green',
     marginTop: '35%',
     justifyContent: 'center',
-    padding: '5%',
+    padding:'5%',
     alignItems: 'center',
     display: 'flex'
 
@@ -51,48 +51,27 @@ const styles = StyleSheet.create({
 
   },
   Lprofile: {
-    height: 130,
-    width: 130,
-    borderRadius: 65,
-    backgroundColor: '#fff',
-    marginTop: '7%',
-    justifyContent:'center',
-    alignItems:'center',
-    shadowColor: "#000",
-    shadowOffset: { width: 3, height: 3, },
-    shadowOpacity: 0.15,
-    shadowRadius: 5,
-    elevation: 10,
+    height: 100,
+    width: 100,
+    borderRadius: 50,
+    backgroundColor: '#5E84B3',
+    marginTop: 40
   },
   under: {
-    width: 136,
+    width: 130,
     height: 2,
-    backgroundColor: '#fff',
-    marginTop: 2,
-    marginLeft: -5,
+    backgroundColor: 'black',
+    marginTop:2
   },
   ForgoteP: {
-    marginTop: '35%',
-    marginLeft: '60%'
+    marginTop:'35%',
+    marginLeft:'60%'
   },
-  /*
-  #3B4F50
-  */
   texts: {
-    color: '#fff'
+    color: '#3B4F50'
   },
   LBody: {
     marginTop: 20
-  },
-  StayImage: {
-    width: 80,
-    height: 140,
-    borderRadius: 15,
-    shadowColor: "#000",
-    shadowOffset: { width: 3, height: 3, },
-    shadowOpacity: 15,
-    shadowRadius: 5,
-    elevation: 15,
   }
 }
 )
