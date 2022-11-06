@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     Submit: {
         height: '8%',
         width: '30%',
-        marginTop: '95%',
+        marginTop: '100%',
         backgroundColor: 'white',
         justifyContent: 'center',
         borderRadius: 15,

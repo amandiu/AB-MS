@@ -14,7 +14,7 @@ import Card from './Components/Card';
 import Bottombar from './Components/Bottombar';
 import Display from '../AB-MS/Screens/Display';
 import Limit from '../AB-MS/Screens/Limit';
-import Live_Chat from './Live_Chat';
+import Live_Chat from './Screens/Live_Chat';
 
 
 
@@ -30,7 +30,7 @@ export default function App() {
     <View style={{ flex: 1 }}>
       <StatusBar barStyle='light-content' translucent={true} backgroundColor='transparent' />
       <SvgXml xml={Background} height='800' width={'400'} style={styles.AppSvg}></SvgXml>
-      <Navigation/>
+      <Live_Chat/>
     </View>
   )
 }
