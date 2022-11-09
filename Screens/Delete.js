@@ -3,7 +3,8 @@ import React from 'react'
 import Deletes from '../assets/Delete.png';
 
 
-const Delete = () => {
+export class Delete extends Component {
+    render() {
     return (
         <View style={{
             height: '100%',
@@ -93,5 +94,5 @@ const Delete = () => {
         </View>
     )
 }
-
+}
 export default Delete

@@ -18,23 +18,22 @@ import Bus from '../assets/seat-top-view-removebg-preview.png'
 const SettingsAllButton = ({ navigation }) => {
   return (
     <View style={styles.SettingsBo}>
-      <Settings title='Profile Edit' imageIcon={profile} onPress={() => navigation.navigate("")}></Settings>
-      <Settings title='Buy Tickets' imageIcon={Ticket} onPress={() => navigation.navigate("")}></Settings>
+      <Settings title='Profile Edit' imageIcon={profile} onPress={() => navigation.navigate("profile")}></Settings>
+      <Settings title='Buy Tickets'  onPress={() => navigation.navigate("")}></Settings>
       <Settings title='About' imageIcon={About} onPress={() => navigation.navigate("")}></Settings>
-      <Settings title='Live Chat' imageIcon={LiveChat} onPress={() => navigation.navigate("")}></Settings>
+      <Settings title='Live Chat' imageIcon={LiveChat} onPress={() => navigation.navigate("livechat")}></Settings>
       <Settings title='Privacy' imageIcon={privacy} onPress={() => navigation.navigate("")}></Settings>
-      <Settings title='Display' imageIcon={Display} onPress={() => navigation.navigate("")}></Settings>
-      <Settings title='Limit' imageIcon={Limit} onPress={() => navigation.navigate("")}></Settings>
-      <Settings title='Help Line' imageIcon={Help} onPress={() => navigation.navigate("")}></Settings>
+      <Settings title='Display' imageIcon={Display} onPress={() => navigation.navigate("display")}></Settings>
+      <Settings title='Limit' imageIcon={Limit} onPress={() => navigation.navigate("limit")}></Settings>
+      <Settings title='Help Line' imageIcon={Help} onPress={() => navigation.navigate("helpLile")}></Settings>
       <Settings title='Notification' imageIcon={notification} onPress={() => navigation.navigate("Notificatione")}></Settings>
-      <Settings title='Delete Account' imageIcon={Delete} onPress={() => navigation.navigate("")}></Settings>
+      <Settings title='Delete Account' imageIcon={Delete} onPress={() => navigation.navigate("delet")}></Settings>
       <Settings title='Bus Site System' imageIcon={Bus} onPress={() => navigation.navigate("")}></Settings>
     </View>
   )
 }
 
 export default SettingsAllButton
-
 const styles = StyleSheet.create({
   SettingsBo: {
     marginTop: '20%'

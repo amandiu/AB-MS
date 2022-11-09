@@ -1,7 +1,9 @@
 import React from 'react'
 import { View, Text, StyleSheet,  TouchableOpacity } from 'react-native'
 
-function Live_Chat() {
+
+export class Live_Chat extends Component {
+    render() {
     return (
         <View style={styles.Icontainer}>
             <View style={styles.Titele}>
@@ -30,7 +32,7 @@ function Live_Chat() {
         </View>
     )
 }
-
+}
 export default Live_Chat
 
 const styles = StyleSheet.create({
@@ -83,7 +85,7 @@ const styles = StyleSheet.create({
     Submit: {
         height: '8%',
         width: '30%',
-        marginTop: '100%',
+        marginTop: '90%',
         backgroundColor: 'white',
         justifyContent: 'center',
         borderRadius: 15,
