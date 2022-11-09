@@ -45,7 +45,7 @@ const Bottombar = () => {
               },
             }} name="Profile" component={Profile} />
       <Tab.Screen options={{
-              title:'Notification',  headerStyle: {
+              title:'Service',  headerStyle: {
                 backgroundColor: 'transparent',
                 shadowColor:'#000'
               },
@@ -55,20 +55,9 @@ const Bottombar = () => {
               },
             }} name='Service' component={Service} />
       <Tab.Screen options={{
-              title:'Notification',  headerStyle: {
-                backgroundColor: 'transparent',
-                shadowColor:'#000'
-              },
-              headerTintColor: '#fff',
-              headerTitleStyle: {
-                fontWeight: 'bold',
-              },
+           headerShown:false
             }}name='Settings' component={Settinges} />
-      <Tab.Screen options={{
-              title:'Sit System',  headerStyle: {
-                backgroundColor: 'transparent',
-                shadowColor:'#000'
-              },
+      <Tab.Screen options={{title:'Sit System',  headerStyle: {backgroundColor: 'transparent',shadowColor:'#000' },
               headerTintColor: '#fff',
               headerTitleStyle: {
                 fontWeight: 'bold',

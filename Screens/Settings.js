@@ -38,7 +38,14 @@
               },
             }} name="profile" component={profile} />
             <Stack.Screen options={{
-              headerShown: false,
+              title:'Limit',  headerStyle: {
+                backgroundColor: 'transparent',
+                shadowColor:'#000'
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
             }} name="limit" component={limit} />
             <Stack.Screen options={{
               title:'Display',  headerStyle: {

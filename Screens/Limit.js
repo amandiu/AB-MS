@@ -10,7 +10,7 @@ export class Limit extends Component {
                     <View style={{
                         flexDirection: 'row',
                         alignItems: 'center',
-                        justifyContent: 'center'
+                        justifyContent: 'space-evenly'
                     }}>
                         <View>
                             <Image source={Ima} style={styles.Icon}></Image>
@@ -37,15 +37,17 @@ export default Limit
 
 const styles = StyleSheet.create({
     Fulldisplay: {
+        marginTop:'-13%',
         height: '100%',
         width: '100%',
         alignItems: 'center'
     },
     Heard: {
-        height: '5%',
-        width: '30%',
+        height: '8%',
+        width: '35%',
         backgroundColor: 'white',
         marginTop: '15%',
+        justifyContent:'center',
         borderRadius: 15,
         shadowColor: "#fff",
         shadowOffset: { width: 0, height: 0, },
@@ -54,9 +56,9 @@ const styles = StyleSheet.create({
         elevation: 0
     },
     Icon: {
-        height: '80%',
+        height: '70%',
         width: '80%',
-        margin: '15%'
+        marginLeft:'15%',
     },
     Details: {
         width: '90%',

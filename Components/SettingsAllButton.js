@@ -36,6 +36,6 @@ const SettingsAllButton = ({ navigation }) => {
 export default SettingsAllButton
 const styles = StyleSheet.create({
   SettingsBo: {
-    marginTop: '2%'
+    marginTop: '20%'
   }
 });
