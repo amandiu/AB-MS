@@ -19,7 +19,7 @@ const SettingsAllButton = ({ navigation }) => {
   return (
     <View style={styles.SettingsBo}>
       <Settings title='Profile Edit' imageIcon={profile} onPress={() => navigation.navigate("profile")}></Settings>
-      <Settings title='Buy Tickets'  onPress={() => navigation.navigate("")}></Settings>
+      <Settings title='Buy Tickets' imageIcon={Ticket}  onPress={() => navigation.navigate("")}></Settings>
       <Settings title='About' imageIcon={About} onPress={() => navigation.navigate("")}></Settings>
       <Settings title='Live Chat' imageIcon={LiveChat} onPress={() => navigation.navigate("livechat")}></Settings>
       <Settings title='Privacy' imageIcon={privacy} onPress={() => navigation.navigate("")}></Settings>
@@ -36,6 +36,6 @@ const SettingsAllButton = ({ navigation }) => {
 export default SettingsAllButton
 const styles = StyleSheet.create({
   SettingsBo: {
-    marginTop: '20%'
+    marginTop: '2%'
   }
 });

@@ -1,21 +1,4 @@
-/*
-        <Stack.Screen options={{
-          headerShown: false,
-        }} name="deletee" component={Delete} />
-        <Stack.Screen options={{
-          headerShown: false,
-        }} name="helpline" component={Help_line} />
-        <Stack.Screen options={{
-          headerShown: false,
-        }} name="limit" component={Limit} />
-        <Stack.Screen options={{
-          headerShown: false,
-        }} name="liveChat" component={Live_Chat} />
-        <Stack.Screen options={{
-        title: 'Help Line'
-      }}  name="Helpline" component={Helpline} />
-       
- */
+
       import React from 'react'
       import { createNativeStackNavigator } from '@react-navigation/native-stack';
       import SettingsAllButton from '../Components/SettingsAllButton';
@@ -35,7 +18,14 @@
               headerShown: false
             }} name="SettingsAllButton" component={SettingsAllButton} />
             <Stack.Screen options={{
-              headerShown: false,
+              title:'Notification',  headerStyle: {
+                backgroundColor: 'transparent',
+                shadowColor:'#000'
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
             }} name="Notificatione" component={Notification} />
             <Stack.Screen options={{
               title:'Profile',  headerStyle: {

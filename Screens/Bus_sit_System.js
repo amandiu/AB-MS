@@ -20,7 +20,7 @@ const Bus_sit_System = ({ navigation }) => {
           color: 'white',
           fontSize: 30,
           textAlign: 'center',
-          marginTop: '18%',
+          marginTop: '1%',
           marginBottom: '5%'
         }}>
           Welcome to Buy a Ticket

@@ -9,9 +9,9 @@ const SettingsButton = ({
 }) => {
   
   return (
-    <View style={{
+      <View style={{
       width:width-198,
-      marginTop:'1%'
+      marginTop:'2%'
     }}>
     <TouchableOpacity onPress={onPress?onPress:()=>{}}>
       <View style={styles.prbutton}>
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     backgroundColor: '#fff',
     borderRadius: 12,
-    paddingVertical:3,
+    paddingVertical:6,
     paddingHorizontal:13,
     alignItems:'center',
     marginLeft:'5%',

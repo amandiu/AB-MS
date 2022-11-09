@@ -44,13 +44,36 @@ const Bottombar = () => {
                 fontWeight: 'bold',
               },
             }} name="Profile" component={Profile} />
-      <Tab.Screen name='Service' component={Service} />
       <Tab.Screen options={{
-          headerShown: false,
-        }}name='Settings' component={Settinges} />
+              title:'Notification',  headerStyle: {
+                backgroundColor: 'transparent',
+                shadowColor:'#000'
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+            }} name='Service' component={Service} />
       <Tab.Screen options={{
-          headerShown: false,
-        }} name='SitSystem' component={Bus_sit_System} />
+              title:'Notification',  headerStyle: {
+                backgroundColor: 'transparent',
+                shadowColor:'#000'
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+            }}name='Settings' component={Settinges} />
+      <Tab.Screen options={{
+              title:'Sit System',  headerStyle: {
+                backgroundColor: 'transparent',
+                shadowColor:'#000'
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+            }} name='SitSystem' component={Bus_sit_System} />
     </Tab.Navigator>
   )
 }

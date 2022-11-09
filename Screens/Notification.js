@@ -7,7 +7,7 @@ export class Notification extends Component {
             <View style={{
                 height: '100%',
                 width: '100%',
-                marginTop: '15%',
+                marginTop: '3%',
                 marginLeft: '5%'
             }}>
                 <ScrollView>
