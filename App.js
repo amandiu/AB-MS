@@ -53,7 +53,16 @@ const Navigation = () => {
         <Stack.Screen options={{
           headerShown: false
         }} name="StayScreen2" component={Login} />
-        <Stack.Screen name="Registration" component={register} />
+        <Stack.Screen options={{
+            title:'Registration',  headerStyle: {
+              backgroundColor: 'transparent',
+              shadowColor:'#000'
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          }} name="Registration" component={register} />
         <Stack.Screen options={{
           headerShown: false
         }} name="LogInButton" component={Bottombar} />
