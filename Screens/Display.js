@@ -15,12 +15,12 @@ export class Display extends Component {
                         <View>
                             <Image source={Ima} style={styles.Icon}></Image>
                         </View>
-                        <View>
+                        
                             <Text style={{
                                 fontSize: 20,
                                 fontWeight: 'bold'
                             }}>Display</Text>
-                        </View>
+                        
                     </View>
                 </View>
 
@@ -37,12 +37,12 @@ export default Display
 
 const styles = StyleSheet.create({
     Fulldisplay: {
-        height: '100%',
-        width: '100%',
-        alignItems: 'center'
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: 'red'
     },
     Heard: {
-        height: '5%',
+        height: '%',
         width: '30%',
         backgroundColor: 'white',
         marginTop: '15%',
