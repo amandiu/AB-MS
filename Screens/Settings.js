@@ -23,10 +23,9 @@
       import profile from './Profile';
       import limit from './Limit';
       import display from './Display';
-      import delet from './Delete';
-      import helpLile from './Help_line';
-      import livechat from './Live_Chat';
-      
+
+
+
       const Stack = createNativeStackNavigator();
       
       const Settings = () => {
@@ -39,13 +38,27 @@
               headerShown: false,
             }} name="Notificatione" component={Notification} />
             <Stack.Screen options={{
-              headerShown: false,
+              title:'Profile',  headerStyle: {
+                backgroundColor: 'transparent',
+                shadowColor:'#000'
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
             }} name="profile" component={profile} />
             <Stack.Screen options={{
               headerShown: false,
             }} name="limit" component={limit} />
             <Stack.Screen options={{
-              headerShown: false,
+              title:'Display',  headerStyle: {
+                backgroundColor: 'transparent',
+                shadowColor:'#000'
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
             }} name="display" component={display} />     
           </Stack.Navigator>
       

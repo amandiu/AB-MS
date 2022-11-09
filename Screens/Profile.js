@@ -15,7 +15,7 @@ const Profile = () => {
         justifyContent:'space-evenly',
         alignItems:'center',
         marginLeft:'35%',
-        marginTop:'10%',
+        marginTop:'12%',
         marginBottom:'3%'
       }}>
         <View style={{

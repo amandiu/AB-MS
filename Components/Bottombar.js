@@ -34,7 +34,16 @@ const Bottombar = () => {
       })}
       style={{ flex: 1 }}>
       <Tab.Screen options={{ headerShown: false }} name="Home" component={Home} />
-      <Tab.Screen name="Profile" component={Profile} />
+      <Tab.Screen options={{
+              title:'Profile',  headerStyle: {
+                backgroundColor: 'transparent',
+                shadowColor:'#000'
+              },
+              headerTintColor: '#fff',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+            }} name="Profile" component={Profile} />
       <Tab.Screen name='Service' component={Service} />
       <Tab.Screen options={{
           headerShown: false,
