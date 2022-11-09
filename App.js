@@ -15,6 +15,7 @@ import Bottombar from './Components/Bottombar';
 import Display from '../AB-MS/Screens/Display';
 import Limit from '../AB-MS/Screens/Limit';
 import Live_Chat from './Screens/Live_Chat';
+import Ac_sit_System from './Screens/Ac_sit_System';
 
 
 
@@ -30,7 +31,7 @@ export default function App() {
     <View style={{ flex: 1 }}>
       <StatusBar barStyle='light-content' translucent={true} backgroundColor='transparent' />
       <SvgXml xml={Background} height='800' width={'400'} style={styles.AppSvg}></SvgXml>
-      <Live_Chat/>
+      <Navigation/>
     </View>
   )
 }
