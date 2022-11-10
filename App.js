@@ -12,10 +12,7 @@ import { Background } from './Components/Background';
 import { SvgXml } from 'react-native-svg';
 import Card from './Components/Card';
 import Bottombar from './Components/Bottombar';
-import Display from '../AB-MS/Screens/Display';
-import Limit from '../AB-MS/Screens/Limit';
-import Live_Chat from './Screens/Live_Chat';
-import Ac_sit_System from './Screens/Ac_sit_System';
+
 
 
 
