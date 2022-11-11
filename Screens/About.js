@@ -10,31 +10,28 @@ const About = () => {
       width: '100%',
       margin: '1%',
       padding: '1%',
-      alignItems: 'center'
-
+      alignItems: 'center',
+      
     }}>
       <View style={{
-        height: '6%',
-        width: '36%',
         backgroundColor: 'white',
         borderRadius: 5,
-        marginTop: '10%',
         flexDirection: 'row',
-
-
+        paddingHorizontal: '5%',
+        paddingVertical: '3%',
+        justifyContent: 'space-around',
+        marginTop:'2%'
       }}>
         <View>
           <Image source={Abouts} style={{
-            height: 30,
-            width: 30,
-            margin: 5
+            height: 28,
+            width: 28,
           }}></Image>
         </View>
         <View>
           <Text style={{
             fontSize: 20,
             fontWeight: 'bold',
-            marginTop:'15%'
           }}> About</Text>
         </View>
       </View>
@@ -53,7 +50,7 @@ const About = () => {
       }}>
 
       </View>
-      
+
     </View>
   )
 }

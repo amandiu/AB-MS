@@ -10,20 +10,23 @@ const Help_line = () => {
       width: '100%',
       margin: '1%',
       padding: '1%',
-      alignItems: 'center'
+      alignItems: 'center',
 
     }}>
       <View style={{
-        height: '6%',
-        width: '36%',
-        backgroundColor: 'white',
+        height: '7%',
+        width: '39%',
+        backgroundColor: '#fff',
         borderRadius: 5,
-        marginTop: '10%',
+        marginTop: '5%',
         flexDirection: 'row',
-
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
 
       }}>
-        <View>
+        <View style={{
+          paddingHorizontal: '-1%'
+        }}>
           <Image source={Help} style={{
             height: 30,
             width: 30,
@@ -34,7 +37,7 @@ const Help_line = () => {
           <Text style={{
             fontSize: 18,
             fontWeight: 'bold',
-            marginTop:'5%'
+            marginTop: '5%'
           }}> Help Line</Text>
         </View>
       </View>
