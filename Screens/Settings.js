@@ -8,6 +8,9 @@ import profilee from './Profile';
 import helpLile from './Help_line';
 import livechat from './Live_Chat';
 import about from './About';
+import ddelete from './Delete';
+
+
 /*
 
  <Stack.Screen options={{
@@ -79,6 +82,22 @@ const Settings = () => {
           fontWeight: 'bold',
         },
       }} name="about" component={about} />
+      <Stack.Screen options={{
+        title: 'Live Chat',
+        headerStyle: { backgroundColor: 'transparent' },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      }} name="livechat" component={livechat} />
+      <Stack.Screen options={{
+        title: 'Delete Account',
+        headerStyle: { backgroundColor: 'transparent' },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      }} name="ddelete" component={ddelete} />
 
     </Stack.Navigator>
   );

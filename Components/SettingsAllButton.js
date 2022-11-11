@@ -27,7 +27,7 @@ const SettingsAllButton = ({ navigation }) => {
       <Settings title='Limit' imageIcon={Limit} onPress={() => navigation.navigate("limit")}></Settings>
       <Settings title='Help Line' imageIcon={Help} onPress={() => navigation.navigate("helpLile")}></Settings>
       <Settings title='Notification' imageIcon={notification} onPress={() => navigation.navigate("Notificatione")}></Settings>
-      <Settings title='Delete Account' imageIcon={Delete} onPress={() => navigation.navigate("")}></Settings>
+      <Settings title='Delete Account' imageIcon={Delete} onPress={() => navigation.navigate("ddelete")}></Settings>
       <Settings title='Bus Site System' imageIcon={Bus} onPress={() => navigation.navigate("")}></Settings>
     </View>
   )

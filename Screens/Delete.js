@@ -13,32 +13,40 @@ const Delete = () => {
             alignItems: 'center'
 
         }}>
+
             <View style={{
-                height: '6%',
-                width: '36%',
-                backgroundColor: 'white',
-                borderRadius: 5,
-                marginTop: '10%',
-                flexDirection: 'row'
-
-
+                        height: '6%',
+                        width: '30%',
+                        backgroundColor:'#fff',
+                        marginTop: '2%',
+                        borderRadius: 5,
+                        justifyContent:'center',
+                        shadowColor: "#fff",
+                        shadowOffset: { width: 0, height: 0, },
+                        shadowOpacity: 0.15,
+                        shadowRadius: 5,
+                        elevation: 0,
             }}>
-                <View>
-                    <Image source={Deletes} style={{
-                        height: 30,
-                        width: 30,
-                        margin: 5
-                    }}></Image>
-                </View>
-                <View>
-                    <Text style={{
-                        fontSize: 20,
-                        fontWeight: 'bold',
-                        marginTop: '15%'
-                    }}>Delete</Text>
+                <View style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    justifyContent:'space-evenly'
+
+                }}>
+                    <View>
+                        <Image source={Deletes} style={{
+                            height: 25,
+                            width: 25,
+                        }}></Image>
+                    </View>
+                    <View>
+                        <Text style={{
+                            fontSize: 20,
+                            fontWeight: 'bold',
+                        }}>Delete</Text>
+                    </View>
                 </View>
             </View>
-
             <View style={{
                 height: '5%',
                 width: '90%',
@@ -84,7 +92,8 @@ const Delete = () => {
                 <Text style={{
                     textAlign: 'center',
                     fontSize: 20,
-                    marginTop: '2%'
+                    marginTop: '2%',
+                    fontWeight:'bold',
 
                 }}>Submit</Text>
 
