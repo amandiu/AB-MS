@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import { Text, View, StyleSheet, Image } from 'react-native';
 import Ima from '../assets/Display.png';
 
-export class Display extends Component {
-    render() {
+const Display  = () => {
         return (
             <View style={styles.Fulldisplay}>
                 <View style={styles.Heard}>
@@ -15,12 +14,12 @@ export class Display extends Component {
                         <View>
                             <Image source={Ima} style={styles.Icon}></Image>
                         </View>
-                        
-                            <Text style={{
-                                fontSize: 20,
-                                fontWeight: 'bold'
-                            }}>Display</Text>
-                        
+
+                        <Text style={{
+                            fontSize: 20,
+                            fontWeight: 'bold'
+                        }}>Display</Text>
+
                     </View>
                 </View>
 
@@ -30,9 +29,8 @@ export class Display extends Component {
             </View>
         )
     }
-}
 
-export default Display
+export default Display ;
 
 
 const styles = StyleSheet.create({

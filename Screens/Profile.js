@@ -11,15 +11,15 @@ const Profile = () => {
         backgroundColor: 'white',
         borderRadius: 5,
         flexDirection: 'row',
-        width:'35%',
-        justifyContent:'space-evenly',
-        alignItems:'center',
-        marginLeft:'35%',
-        marginTop:'10%',
-        marginBottom:'3%'
+        width: '35%',
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+        marginLeft: '35%',
+        marginTop: '10%',
+        marginBottom: '3%'
       }}>
         <View style={{
-          paddingVertical:'6%'
+          paddingVertical: '6%'
         }}>
           <Image source={Ima} style={{
             height: 20,
@@ -27,12 +27,12 @@ const Profile = () => {
           }}></Image>
         </View>
         <View style={{
-          paddingHorizontal:'2%',
-          paddingVertical:'4.5%'
+          paddingHorizontal: '2%',
+          paddingVertical: '4.5%'
         }}>
           <Text style={{
             fontSize: 22,
-            fontWeight:'700'
+            fontWeight: '700'
           }}>Profile</Text>
         </View>
       </View>
@@ -64,49 +64,49 @@ const Profile = () => {
         <Text style={{
           textDecorationLine: 'underline',
           marginLeft: '2%',
-          textAlign:'center',
-          fontWeight:'600',
-          fontSize:20,
-          marginTop:10
+          textAlign: 'center',
+          fontWeight: '600',
+          fontSize: 20,
+          marginTop: 10
         }}>Old Details</Text>
         <Text style={{
           marginLeft: '4%',
           marginTop: '2%',
           fontSize: 16,
-          fontWeight:'500',
+          fontWeight: '500',
         }}>Last 5 ticket Details:</Text>
         <ScrollView>
-        <Text style={{
+          <Text style={{
             marginTop: '5%',
-            textAlign:'center',
-            fontWeight:'700',
+            textAlign: 'center',
+            fontWeight: '700',
             fontSize: 18,
-            marginBottom:'2%'
+            marginBottom: '2%'
           }}>Show Your Old Details</Text>
           <Text style={{
             marginLeft: '8%',
             marginTop: '1%',
-            marginBottom:'2%'
+            marginBottom: '2%'
           }}>1. Name: Sagor Alam.{"\n"}Time: 10..00pm{"\n"}Date: 01.08.2022{"\n"}Address: Rangpur to Dhaka.{"\n"}Payment: 600 Taka only.</Text>
           <Text style={{
             marginLeft: '8%',
             marginTop: '1%',
-            marginBottom:'2%'
+            marginBottom: '2%'
           }}>2. Name: Sagor Alam.{"\n"}Time: 10..00pm{"\n"}Date: 01.08.2022{"\n"}Address: Rangpur to Dhaka.{"\n"}Payment: 600 Taka only.</Text>
           <Text style={{
             marginLeft: '8%',
             marginTop: '1%',
-            marginBottom:'2%'
+            marginBottom: '2%'
           }}>3. Name: Sagor Alam.{"\n"}Time: 10..00pm{"\n"}Date: 01.08.2022{"\n"}Address: Rangpur to Dhaka.{"\n"}Payment: 600 Taka only.</Text>
           <Text style={{
             marginLeft: '8%',
             marginTop: '1%',
-            marginBottom:'2%'
+            marginBottom: '2%'
           }}>4. Name: Sagor Alam.{"\n"}Time: 10..00pm{"\n"}Date: 01.08.2022{"\n"}Address: Rangpur to Dhaka.{"\n"}Payment:600 Taka only.</Text>
           <Text style={{
             marginLeft: '8%',
             marginTop: '1%',
-            marginBottom:'4%'
+            marginBottom: '4%'
           }}>5. Name: Sagor Alam.{"\n"}Time: 10..00pm{"\n"}Date: 01.08.2022{"\n"}Address: Rangpur to Dhaka.{"\n"}Payment:600 Taka only.</Text>
         </ScrollView>
       </View>

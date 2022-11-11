@@ -10,7 +10,7 @@ import Help from '../assets/help-line.png'
 import Limit from '../assets/limitation-icon-0.jpg'
 import notification from '../assets/notification.png'
 import privacy from '../assets/privacy.png'
-import profile from '../assets/profile.png'
+import profileImg from '../assets/profile.png'
 import Bus from '../assets/seat-top-view-removebg-preview.png'
 
 
@@ -18,14 +18,14 @@ import Bus from '../assets/seat-top-view-removebg-preview.png'
 const SettingsAllButton = ({ navigation }) => {
   return (
     <View style={styles.SettingsBo}>
-      <Settings title='Profile Edit' imageIcon={profile} onPress={() => navigation.navigate("")}></Settings>
+      <Settings title='Profile Edit' imageIcon={profileImg} onPress={() => navigation.navigate("profilee")}></Settings>
       <Settings title='Buy Tickets' imageIcon={Ticket} onPress={() => navigation.navigate("")}></Settings>
       <Settings title='About' imageIcon={About} onPress={() => navigation.navigate("")}></Settings>
       <Settings title='Live Chat' imageIcon={LiveChat} onPress={() => navigation.navigate("")}></Settings>
       <Settings title='Privacy' imageIcon={privacy} onPress={() => navigation.navigate("")}></Settings>
-      <Settings title='Display' imageIcon={Display} onPress={() => navigation.navigate("")}></Settings>
-      <Settings title='Limit' imageIcon={Limit} onPress={() => navigation.navigate("")}></Settings>
-      <Settings title='Help Line' imageIcon={Help} onPress={() => navigation.navigate("")}></Settings>
+      <Settings title='Display' imageIcon={Display} onPress={() => navigation.navigate("display")}></Settings>
+      <Settings title='Limit' imageIcon={Limit} onPress={() => navigation.navigate("limit")}></Settings>
+      <Settings title='Help Line' imageIcon={Help} onPress={() => navigation.navigate("helpLile")}></Settings>
       <Settings title='Notification' imageIcon={notification} onPress={() => navigation.navigate("Notificatione")}></Settings>
       <Settings title='Delete Account' imageIcon={Delete} onPress={() => navigation.navigate("")}></Settings>
       <Settings title='Bus Site System' imageIcon={Bus} onPress={() => navigation.navigate("")}></Settings>

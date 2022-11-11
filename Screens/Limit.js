@@ -10,7 +10,7 @@ export class Limit extends Component {
                     <View style={{
                         flexDirection: 'row',
                         alignItems: 'center',
-                        justifyContent: 'center'
+                        justifyContent: 'space-evenly'
                     }}>
                         <View>
                             <Image source={Ima} style={styles.Icon}></Image>
@@ -39,23 +39,24 @@ const styles = StyleSheet.create({
     Fulldisplay: {
         height: '100%',
         width: '100%',
-        alignItems: 'center'
+        alignItems: 'center',
+        
     },
     Heard: {
-        height: '5%',
-        width: '30%',
-        backgroundColor: 'white',
-        marginTop: '15%',
+        height: '8%',
+        width: '40%',
+        backgroundColor:'#fff',
+        marginTop: '2%',
         borderRadius: 15,
         shadowColor: "#fff",
         shadowOffset: { width: 0, height: 0, },
         shadowOpacity: 0.15,
         shadowRadius: 5,
-        elevation: 0
+        elevation: 0,
     },
     Icon: {
-        height: '80%',
-        width: '80%',
+        height: '70%',
+        width: '70%',
         margin: '15%'
     },
     Details: {
