@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
         
     },
     Heard: {
-        height: '8%',
+        height: '6%',
         width: '40%',
         backgroundColor:'#fff',
         marginTop: '2%',
