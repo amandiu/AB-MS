@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet,  TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity, Dimensions } from 'react-native'
 
 function Live_Chat() {
     return (
@@ -9,15 +9,149 @@ function Live_Chat() {
                     fontSize: 18
                 }}>Live_Chat</Text>
             </View>
-            <View style={styles.Card}>
-                <Text style={{
-                    margin: '3%'
-                }}>tftftrdtrgguyguygufvxdvxfxfdxfdxfdxfdxhtftfytfhhjhghjgjygyjgjgfhfhjfguyfguyfguyfguytffhsf</Text>
+            <View style={{
+                width: '98%',
+                marginTop: '5%',
+                flexDirection: 'row',
+                justifyContent: 'space-around',
+                alignItems: 'center',
+            }}>
+                <View style={styles.Card}>
+                    <Text style={{
+                        margin: '3%'
+                    }}>yfguyfguytffhsf</Text>
+                </View>
+                <View style={styles.Card}>
+                    <Text style={{
+                        margin: '3%'
+                    }}>frtyhuyui8</Text>
+                </View>
             </View>
-            <View style={styles.Card1}>
-                <Text style={{
-                    margin: '3%'
-                }}>tftftrdtrgguyguygufvxdvxfxfdxfdxfdxfdxhtftfytfhhjhghjgjygyjgjgfhfhjfguyfguyfguyfguytffhsf</Text>
+            <View style={{
+                width: '98%',
+                marginTop: '5%',
+                flexDirection: 'row',
+                justifyContent: 'space-around',
+                alignItems: 'center',
+            }}>
+                <View style={styles.Card}>
+                    <Text style={{
+                        margin: '3%'
+                    }}>yfguyfguytffhsf</Text>
+                </View>
+                <View style={styles.Card}>
+                    <Text style={{
+                        margin: '3%'
+                    }}>frtyhuyui8</Text>
+                </View>
+            </View>
+            <View style={{
+                width: '98%',
+                marginTop: '5%',
+                flexDirection: 'row',
+                justifyContent: 'space-around',
+                alignItems: 'center',
+            }}>
+                <View style={styles.Card}>
+                    <Text style={{
+                        margin: '3%'
+                    }}>yfguyfguytffhsf</Text>
+                </View>
+                <View style={styles.Card}>
+                    <Text style={{
+                        margin: '3%'
+                    }}>frtyhuyui8</Text>
+                </View>
+            </View>
+            <View style={{
+                width: '98%',
+                marginTop: '5%',
+                flexDirection: 'row',
+                justifyContent: 'space-around',
+                alignItems: 'center',
+            }}>
+                <View style={styles.Card}>
+                    <Text style={{
+                        margin: '3%'
+                    }}>yfguyfguytffhsf</Text>
+                </View>
+                <View style={styles.Card}>
+                    <Text style={{
+                        margin: '3%'
+                    }}>frtyhuyui8</Text>
+                </View>
+            </View>
+            <View style={{
+                width: '98%',
+                marginTop: '5%',
+                flexDirection: 'row',
+                justifyContent: 'space-around',
+                alignItems: 'center',
+            }}>
+                <View style={styles.Card}>
+                    <Text style={{
+                        margin: '3%'
+                    }}>yfguyfguytffhsf</Text>
+                </View>
+                <View style={styles.Card}>
+                    <Text style={{
+                        margin: '3%'
+                    }}>frtyhuyui8</Text>
+                </View>
+            </View>
+            <View style={{
+                width: '98%',
+                marginTop: '5%',
+                flexDirection: 'row',
+                justifyContent: 'space-around',
+                alignItems: 'center',
+            }}>
+                <View style={styles.Card}>
+                    <Text style={{
+                        margin: '3%'
+                    }}>yfguyfguytffhsf</Text>
+                </View>
+                <View style={styles.Card}>
+                    <Text style={{
+                        margin: '3%'
+                    }}>frtyhuyui8</Text>
+                </View>
+            </View>
+            <View style={{
+                width: '98%',
+                marginTop: '5%',
+                flexDirection: 'row',
+                justifyContent: 'space-around',
+                alignItems: 'center',
+            }}>
+                <View style={styles.Card}>
+                    <Text style={{
+                        margin: '3%'
+                    }}>yfguyfguytffhsf</Text>
+                </View>
+                <View style={styles.Card}>
+                    <Text style={{
+                        margin: '3%'
+                    }}>frtyhuyui8</Text>
+                </View>
+            </View>
+            <View style={{
+                width: '98%',
+                marginTop: '5%',
+                flexDirection: 'row',
+                justifyContent: 'space-around',
+                alignItems: 'center',
+            }}>
+                <View style={styles.Card}>
+                    <Text style={{
+                        margin: '3%'
+                    }}>yfguyfguytffhsf</Text>
+                </View>
+                <View style={styles.Card}>
+                    <Text style={{
+                        margin: '3%'
+                    }}>frtyhuyui8</Text>
+                </View>
             </View>
             <View style={styles.Submit}>
                 <TouchableOpacity>
@@ -33,14 +167,17 @@ function Live_Chat() {
 
 export default Live_Chat
 
+const { width } = Dimensions.get("screen")
+
 const styles = StyleSheet.create({
     Icontainer: {
         height: '100%',
         width: '100%',
-        alignItems: 'center'
+        alignItems: 'center',
+        justifyContent: 'center',
     },
     Titele: {
-        marginTop: '12%',
+        marginTop: '0%',
         height: '5%',
         width: '30%',
         backgroundColor: 'white',
@@ -55,25 +192,11 @@ const styles = StyleSheet.create({
         elevation: 15
     },
     Card: {
-        height: 'auto',
-        width: '60%',
-        marginTop: '5%',
+        width: width - 190,
         backgroundColor: 'white',
-        marginRight: '35%',
-        borderRadius: 15,
-        shadowColor: "#000",
-        shadowOffset: { width: 3, height: 3, },
-        shadowOpacity: 15,
-        shadowRadius: 5,
-        elevation: 15
-    },
-    Card1: {
-        height: 'auto',
-        width: '60%',
-        marginTop: '5%',
-        backgroundColor: 'white',
-        marginLeft: '35%',
-        borderRadius: 15,
+        borderRadius: 5,
+        paddingHorizontal: '5%',
+        paddingVertical: '1%',
         shadowColor: "#000",
         shadowOffset: { width: 3, height: 3, },
         shadowOpacity: 15,
@@ -83,7 +206,7 @@ const styles = StyleSheet.create({
     Submit: {
         height: '8%',
         width: '30%',
-        marginTop: '100%',
+        marginTop: '9%',
         backgroundColor: 'white',
         justifyContent: 'center',
         borderRadius: 15,

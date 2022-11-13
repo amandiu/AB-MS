@@ -32,9 +32,9 @@ const styles = StyleSheet.create({
     width:width-200,
     flexDirection:'row',
     backgroundColor: '#fff',
-    borderRadius: 12,
-    paddingVertical:3,
-    paddingHorizontal:13,
+    borderRadius: 16,
+    paddingVertical:7,
+    paddingHorizontal:15,
     alignItems:'center',
     marginLeft:'5%',
     marginBottom:'3%',
@@ -46,7 +46,8 @@ const styles = StyleSheet.create({
   },
   prbutext:{
     color:'black',
-    fontSize:20
+    fontSize:20,
+    fontWeight:'500',
   },
   settingimg: {
     height: 20,

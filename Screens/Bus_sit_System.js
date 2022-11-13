@@ -370,7 +370,7 @@ const styles = StyleSheet.create({
   Bus_sit: {
     width: '85%',
     height: '70%',
-    backgroundColor: 'white',
+    backgroundColor: 'transparent',
     alignItems: 'center',
     borderRadius: 15,
     shadowColor: "#fff",

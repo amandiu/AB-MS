@@ -18,7 +18,9 @@ import Seate_Select from './Screens/Seate_Select';
 
 
 
-
+/*
+header: (props) => <Header {...props} />
+ */
 
 const Stack = createNativeStackNavigator();
 
@@ -49,12 +51,19 @@ const Navigation = () => {
     <NavigationContainer theme={MyTheme}>
       <Stack.Navigator>
         <Stack.Screen options={{
-          header: (props) => <Header {...props} />
+           headerShown: false
         }} name="Stay Screen" component={Stay} />
         <Stack.Screen options={{
           headerShown: false
         }} name="StayScreen2" component={Login} />
-        <Stack.Screen name="Registration" component={register} />
+        <Stack.Screen options={{
+        title: 'Registration',
+        headerStyle: { backgroundColor: 'transparent' },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      }} name="Registration" component={register} />
         <Stack.Screen options={{
           headerShown: false
         }} name="LogInButton" component={Bottombar} />
