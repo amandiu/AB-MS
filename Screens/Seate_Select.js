@@ -1,5 +1,7 @@
-import { View, Text, StyleSheet, } from 'react-native'
+import { View, Text, StyleSheet,<Checkbox value={false} onValueChange={() => console.log('value changed')}/> } from 'react-native'
 import React from 'react'
+import Checkbox from 'expo-checkbox';
+
 
 
 export default function Seate_Select() {
@@ -11,17 +13,7 @@ export default function Seate_Select() {
             <View style={Styles.HeaderBox1}>
                 <Text style={Styles.Txt1}>Agreement</Text>
                 <Text style={Styles.Txt}>If you want to make your journey time more enjoyable and pleasant then select "AC" & "Non AC" button.</Text>
-                <View style={Styles.Ac_Sit}>
-                    <View style={Styles.SelectBox}>
-                        
-                    </View>
-                    <Text style={Styles.Txt11}>AC_Site</Text>
-                </View>
-                <View style={Styles.Ac_Sit}>
-                    <View style={Styles.SelectBox}>
-                    </View>
-                    <Text style={Styles.Txt11}>Non_AC_Site</Text>
-                </View>
+            <Checkbox ></Checkbox>
             </View>
         </View>
     )
@@ -110,6 +102,16 @@ const Styles = StyleSheet.create({
         shadowOpacity: 15,
         shadowRadius: 10,
         elevation: 0
-    }
+    },
+    section: {
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    paragraph: {
+        fontSize: 15,
+    },
+    checkbox: {
+        margin: 8,
+    },
 
 });

@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { View, StyleSheet, StatusBar } from 'react-native';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
@@ -12,7 +10,7 @@ import { Background } from './Components/Background';
 import { SvgXml } from 'react-native-svg';
 import Card from './Components/Card';
 import Bottombar from './Components/Bottombar';
-import Seate_Select from './Screens/Seate_Select';
+import Seate_Selects from './Screens/Seate_Select';
 
 
 
@@ -30,7 +28,7 @@ export default function App() {
     <View style={{ flex: 1 }}>
       <StatusBar barStyle='light-content' translucent={true} backgroundColor='transparent' />
       <SvgXml xml={Background} height='800' width={'400'} style={styles.AppSvg}></SvgXml>
-      <Navigation/>
+      < Seate_Selects/>
     </View>
   )
 }
