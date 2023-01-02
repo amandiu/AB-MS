@@ -9,6 +9,7 @@ import helpLile from './Help_line';
 import livechat from './Live_Chat';
 import about from './About';
 import ddelete from './Delete';
+import Seatt from './Seate_Select';
 
 
 /*
@@ -98,6 +99,14 @@ const Settings = () => {
           fontWeight: 'bold',
         },
       }} name="ddelete" component={ddelete} />
+      <Stack.Screen options={{
+        title: 'Seate_Select',
+        headerStyle: { backgroundColor: 'transparent' },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+      }} name="Seatt" component={Seatt} />
 
     </Stack.Navigator>
   );

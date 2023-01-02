@@ -4,7 +4,7 @@ import Checkbox from 'expo-checkbox';
 
 
 
-export default function Seate_Select() {
+const Seate_Select = () => {
     return (
         <View style={Styles.Body}>
             <View style={Styles.HeaderBox}>
@@ -13,17 +13,48 @@ export default function Seate_Select() {
             <View style={Styles.HeaderBox1}>
                 <Text style={Styles.Txt1}>Agreement</Text>
                 <Text style={Styles.Txt}>If you want to make your journey time more enjoyable and pleasant then select "AC" & "Non AC" button.</Text>
-            <Checkbox ></Checkbox>
+
+                <View style={{
+                    flexDirection: 'row',
+                    paddingVertical: '5%'
+                }}>
+                    <Checkbox ></Checkbox>
+                    <Text style={{
+                        fontWeight: '700',
+                        fontSize: 20,
+                        paddingHorizontal: '5%',
+                        marginTop:'-1.25%'
+                    }}>AC</Text>
+                </View>
+                <Text style={{
+                        fontWeight: '400',
+                        fontSize: 16,
+                        marginTop:'-2%',
+                        marginBottom:'3%'
+                    }}>OR</Text>
+                <View style={{
+                    flexDirection: 'row',
+                    marginLeft:'14%'
+                }}>
+                    <Checkbox ></Checkbox>
+                    <Text style={{
+                        fontWeight: '700',
+                        fontSize: 20,
+                        paddingHorizontal: '5%',
+                        marginTop:'-1.25%'
+                    }}>Non-AC</Text>
+                </View>
             </View>
         </View>
     )
 }
+export default Seate_Select;
 
 const Styles = StyleSheet.create({
     Body: {
         height: '100%',
         width: '100%',
-        marginTop: '5%',
+        marginTop: '15%',
         padding: '5%',
         alignItems: 'center'
     },
@@ -62,6 +93,7 @@ const Styles = StyleSheet.create({
 
     },
     Txt1: {
+        marginTop:'10%',
         textDecorationLine: 'underline',
         fontSize: 18,
         shadowOffset: { width: 0, height: 3 },

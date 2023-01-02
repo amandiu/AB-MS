@@ -9,7 +9,7 @@ import { Background } from './Components/Background';
 import { SvgXml } from 'react-native-svg';
 import Card from './Components/Card';
 import Bottombar from './Components/Bottombar';
-
+import Seate_Select from './Screens/Seate_Select';
 
 
 
