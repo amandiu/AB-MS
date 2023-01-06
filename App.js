@@ -9,9 +9,8 @@ import { Background } from './Components/Background';
 import { SvgXml } from 'react-native-svg';
 import Card from './Components/Card';
 import Bottombar from './Components/Bottombar';
-import Seate_Select from './Screens/Seate_Select';
-
-
+import {initializeApp} from 'firebase/app';
+import {getDatabase, ref, onValue, set } from 'firebase/database';
 
 
 /*
@@ -22,6 +21,33 @@ const Stack = createNativeStackNavigator();
 
 
 export default function App() {
+
+  //Connect between to firebase and expo project
+  // Firebase Function (firebaseConfig)
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCilPVNxOr7WmVJt63NAIVABFRERpsMLFw",
+    authDomain: "project-45f03.firebaseapp.com",
+    projectId: "project-45f03",
+    storageBucket: "project-45f03.appspot.com",
+    messagingSenderId: "813381821307",
+    appId: "1:813381821307:web:27ab6989c7cb5fdc84d3de"
+  };
+
+  
+initializeApp(firebaseConfig);
+
+
+
+function storeHighScore(userId, score) {
+  const db = getDatabase();
+  const reference = ref(db, 'users/' + userId);
+  set(reference, {
+    highscore: score,
+  });
+}
+
+
   return (
     <View style={{ flex: 1 }}>
       <StatusBar barStyle='light-content' translucent={true} backgroundColor='transparent' />
